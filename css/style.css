@@ -33,7 +33,7 @@ html, body {
   border-style:hidden;
 }
   
-#home{
+.home{
   background: url(../images/tattooing.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
@@ -43,41 +43,6 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-#about {
-}
-
-#services {
-  background-color: #306d9f;
-  color: #ffffff;
-}
-
-#services .glyphicon {
-  border: 2px solid #FFFFFF;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 60px;
-  height: 140px;
-  line-height: 140px;
-  text-align: center;
-  vertical-align: middle;
-  width: 140px;
-}
-
-#information {
-  background: url(../images/estate.jpg) no-repeat center center fixed; 
-  display: table;
-  height: 800px;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#information .panel {
-  opacity: 0.85;
 }
 
 #google_map {
@@ -103,12 +68,12 @@ footer .glyphicon:hover {
         margin-top:10px;
         margin-left:150px;
 }
-#double-arrow{
+.double-arrow{
   margin-top: 590px;
   margin-left:650px;
   color:rgb(248,248,255);
 }
-#gallery{
+.gallery{
   font-family:Teko;
   font-size:55px;
   color:rgb(185,81,107)
@@ -118,7 +83,7 @@ footer .glyphicon:hover {
   height:400px;
   width:300px;
 }
-#box1{
+.box1{
   margin:50px 40px 20px 245px;
   background:url(../images/blackgrey.jpg);
   background-position:center;
@@ -128,7 +93,7 @@ footer .glyphicon:hover {
   color:rgb(248,248,255);
   font-family: Germanika Personal Use;
 }
-#box2{
+.box2{
   margin:50px 20px 20px 40px;
   border-style:hidden;
   background:url(../images/nuskool.jpg);
@@ -141,7 +106,7 @@ footer .glyphicon:hover {
 .box-letter{
   margin-top:145px;
 }
-#box3{
+.box3{
   margin:50px 40px 20px 250px;
   background:url(../images/traditional.jpg);
   background-position:center;
@@ -151,7 +116,7 @@ footer .glyphicon:hover {
   color:rgb(248,248,255);
   font-family: Germanika Personal Use;
 }
-#box4{
+.box4{
   margin:50px 20px 20px 40px;
   border-style:hidden;
   background:url(../images/photo.jpg);
@@ -161,7 +126,7 @@ footer .glyphicon:hover {
   color:rgb(248,248,255);
   font-family: Germanika Personal Use;
 }
-#box5{
+.box5{
   margin:50px 40px 20px 250px;
   background:url(../images/Geometric.jpg);
   background-position:center;
@@ -171,7 +136,7 @@ footer .glyphicon:hover {
   color:rgb(248,248,255);
   font-family: Germanika Personal Use;
 }
-#box6{
+.box6{
   margin:50px 20px 20px 40px;
   border-style:hidden;
   border-radius:5%;
@@ -195,7 +160,7 @@ footer .glyphicon:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-#sto{
+.storiestitle{
   font-family: Germanika Personal Use;
   font-size: 110px;
   color:rgb(185,81,107);
@@ -261,7 +226,7 @@ footer .glyphicon:hover {
    border-style:hidden;
   border-radius:5%;
   }
-  #map{
+  .map{
     width: 100%;
         height: 400px;
   }
@@ -271,7 +236,7 @@ footer .glyphicon:hover {
   width:1345px;
   margin-top:50px;
   margin-bottom:100px;
-  margin-left:-105px;
+  margin-left:0px;
   background: url(../images/tattooer2.jpg) no-repeat center center fixed; 
   display: table;
   position: relative;
@@ -280,7 +245,7 @@ footer .glyphicon:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-#sto2{
+.shopstitle{
   font-family: Germanika Personal Use;
   font-size: 110px;
   color:rgb(185,81,107);

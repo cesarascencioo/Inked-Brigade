@@ -18,75 +18,80 @@
 
 <body class="blood">
   <nav class="navbar navbar-default navbar-fixed-top nav-bar-hidden transparent" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-main">
+        <ul class="nav navbar-nav navbar-center navbar-right">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <div id="myDropdown" class="dropdown-content dropdown-menu-left">
+              <a href="#galleries">Gallery</a>
+              <a href="#stories">Stories & Nightmares</a>
+              <a href="#shops">Best Shops</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
- <div class="collapse navbar-collapse" id="navbar-collapse-main">
-      <ul class="nav navbar-nav navbar-center navbar-right">
-        <div class="dropdown">
-        <button onclick="myFunction()" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
-      <div id="myDropdown" class="dropdown-content dropdown-menu-left">
-    <a href="#">Gallery</a>
-    <a href="#">Stories & Nightmares</a>
-    <a href="#">Best Shops</a>
-  </div>
-</div>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    <!-- /.container-fluid -->
+  </nav>
   <!-- navigation panel -->
-  <!-- first section - Home -->
-  <div id="home">
-    <a href="#about"><i id="double-arrow" class="fa fa-chevron-circle-down fa-3x fa-inverse" aria-hidden="true"></i></a>
+
+  <!-- Home -->
+  <div class="home">
+    <a href="#about"><i class="fa fa-chevron-circle-down fa-3x fa-inverse double-arrow" aria-hidden="true"></i></a>
   </div>
-  </div>
-  <!-- /first section -->
-  <!-- second section - About -->
-  <div id="about" class="pad-section">
+  <!-- End Home -->
+
+  <!-- Galleries -->
+  <div id="galleries" class="pad-section">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h2 id="gallery">Gallery</h2>
+          <h2 class="gallery">Gallery</h2>
         </div>
         <div class="row"></div>
         <a href="blackandfire.html">
-          <div id="box1" class="col-md-5 gallery-box text-center">
+          <div class="col-md-5 gallery-box text-center box1">
             <div class="box-letter">Black & Grey</div>
           </div>
         </a>
         <a href="#">
-          <div id="box2" class="col-md-5 gallery-box  text-center">
+          <div class="col-md-5 gallery-box  text-center box2">
             <div class="box-letter">New School</div>
           </div>
         </a>
         <a href="#">
-          <div id="box3" class="col-md-5 gallery-box text-center">
+          <div class="col-md-5 gallery-box text-center box3">
             <div class="box-letter">American Traditional</div>
           </div>
         </a>
         <a href="#">
-          <div id="box4" class="col-md-5 gallery-box  text-center">
+          <div class="col-md-5 gallery-box  text-center box4">
             <div class="box-letter">Photo Realism</div>
           </div>
         </a>
         <a href="#">
-          <div id="box5" class="col-md-5 gallery-box text-center">
+          <div class="col-md-5 gallery-box text-center box5">
             <div class="box-letter">Geometric</div>
           </div>
         </a>
         <a href="#">
-          <div id="box6" class="col-md-5 gallery-box  text-center">
+          <div class="col-md-5 gallery-box  text-center box6">
             <div class="box-letter">Japanese</div>
           </div>
         </a>
       </div>
     </div>
   </div>
-  <div class="parallax-separate">
-    <div id="sto">Stories & Nightmares</div>
+  <!-- End Galleries -->
+  
+  <!-- Stories -->
+  <div id="stories" class="parallax-separate">
+    <div class="storiestitle">Stories & Nightmares</div>
   </div>
-  <!-- /second section -->
   <div class="container">
     <div class="row">
       <div clas="col-sm-12">
@@ -137,18 +142,25 @@
         et tu ita posuisti, et verba vestra sunt. Invidiosum nomen est, infame, suspectum. Multa sunt dicta ab antiquis de
         contemnendis ac despiciendis rebus humanis; Duo Reges: constructio interrete.</div>
     </div>
-    <div class="parallax-separate2"><div id="sto2">Best Shops</div></div>
-    <div>
-      <input type="text" id="zip-field" placeholder="Enter your zipcode"></input>
-      <button id="zip-btn">Submit</button>
-    </div>
-    <div id="google_map"></div>
+  </div>
+  <!-- End Stories -->
 
-    <!-- attach JavaScripts -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgO2nidcTevzFS8SdmQOL_ZyRF57mD1_w"></script>
-    <script src="js/main.js"></script>
+  <!-- Best Shops -->
+  <div id="shops" class="parallax-separate2">
+    <div class="shopstitle">Best Shops</div>
+  </div>
+  <div>
+    <input type="text" id="zip-field" placeholder="Enter your zipcode"></input>
+    <button id="zip-btn">Submit</button>
+  </div>
+  <div id="google_map"></div>
+  <!-- End Best Shops -->
+
+  <!-- attach JavaScripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgO2nidcTevzFS8SdmQOL_ZyRF57mD1_w"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
