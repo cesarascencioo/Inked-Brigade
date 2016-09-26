@@ -1,10 +1,9 @@
-
-$(document).ready(function (){
-
-  var zipcode = 06460;
+/* globals google $ */
+$(document).ready(function () {
+  var zipcode = '06460';
   var url = '';
 
-  function movemap(lat, lng, map, marker) {
+  function movemap (lat, lng, map, marker) {
     var newlatlng = new google.maps.LatLng(lat, lng);
     map.setCenter(newlatlng);
     marker.setPosition(newlatlng);
@@ -25,21 +24,21 @@ $(document).ready(function (){
   };
 
   // initialize the map object
-  var map1 = new google.maps.Map(document.getElementById('google_map'), options);
+  var map1 = new google.maps.Map(document.getElementById('google-map'), options);
 
   // add Marker
   var marker1 = new google.maps.Marker({
     position: latlng, map: map1
   });
 
-  $('#zip-btn').click(function() {
+  $('#zip-btn').click(function () {
     zipcode = $('#zip-field').val();
-    url = 
+    url =
       'https://maps.googleapis.com/geocode/api/json?address=' +
       zipcode +
       '&key=AIzaSyApG1PalXWLlsns3eo5AAL-1DQKap_JZCY' +
       '&callback=?';
-    $.getJSON(url, function(res) {
+    $.getJSON(url, function (res) {
     });
     var newLat = 38.7738072;
     var newLng = -77.1459617;
@@ -47,24 +46,23 @@ $(document).ready(function (){
   });
 
 });
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function dropdown () {
+  document.getElementById('ham-dropdown').classList.toggle('show');
 }
 
-function filterFunction() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    div = document.getElementById("myDropdown");
-    a = div.getElementsByTagName("a");
-    for (i = 0; i < a.length; i++) {
-        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-        } else {
-            a[i].style.display = "none";
-        }
+function filterFunction () {
+  var input = document.getElementById('myInput');
+  var filter = input.value.toUpperCase();
+  var div = document.getElementById('myDropdown');
+  var a = div.getElementsByTagName('a');
+  for (var i = 0; i < a.length; i++) {
+    if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = '';
+    } else {
+      a[i].style.display = 'none';
     }
+  }
 }
-
