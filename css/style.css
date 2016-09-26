@@ -1,284 +1,204 @@
-/* general styles */
-html, body {
-  height: 100%;
-  width: 100%;
+/* TODO: this is a cheap fix for the overscrolling at the sides,
+  in the future we should find what is actually causing it.*/
+body {
+  overflow-x: hidden;
 }
 
-/* padded section */
-.pad-section {
-  padding: 50px 0;
-}
-.pad-section img {
-  width: 100%;
+.bg-blood {
+  background: url(../images/blood.jpg)
 }
 
-/* vertical-centered text */
-.text-vcenter {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-.text-vcenter h1 {
-  font-size: 4.5em;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-}
-
-/* additional sections */
-.hamburger{
+.hamburger {
   color:rgb(185,81,107);
   margin-right:20px;
   background-color: transparent;
   border-style:hidden;
 }
-  
-.home{
-  background: url(../images/tattooing.jpg) no-repeat center center fixed; 
+
+.home {
+  background: url(../images/tattooing.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
   width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
-#google_map {
-  height: 500px;
-}
-
-footer {
-  padding: 20px 0;
-}
-footer .glyphicon {
-  color: #333333;
-  font-size: 60px;
-}
-footer .glyphicon:hover {
-  color: #306d9f;
-}
- .transparent {
-   border-style: hidden;
-        background-color: transparent;
-        font-family: Kanit;
-        font-size: 37px;
-        letter-spacing: 3px;
-        margin-top:10px;
-        margin-left:150px;
-}
-.double-arrow{
+.double-arrow {
   margin-top: 590px;
-  margin-left:650px;
-  color:rgb(248,248,255);
-}
-.gallery{
-  font-family:Teko;
-  font-size:55px;
-  color:rgb(185,81,107)
-}
-.gallery-box{
-  border-style:solid;
-  height:400px;
-  width:300px;
-}
-.box1{
-  margin:50px 40px 20px 245px;
-  background:url(../images/blackgrey.jpg);
-  background-position:center;
-  border-style:hidden;
-  border-radius:5%;
-  font-size:60px;
-  color:rgb(248,248,255);
-  font-family: Germanika Personal Use;
-}
-.box2{
-  margin:50px 20px 20px 40px;
-  border-style:hidden;
-  background:url(../images/nuskool.jpg);
-  background-position:center;
-  border-radius:5%;
-  font-size:60px;
-  color:rgb(248,248,255);
-  font-family: Germanika Personal Use;
-}
-.box-letter{
-  margin-top:145px;
-}
-.box3{
-  margin:50px 40px 20px 250px;
-  background:url(../images/traditional.jpg);
-  background-position:center;
-  border-style:hidden;
-  border-radius:5%;
-  font-size:53px;
-  color:rgb(248,248,255);
-  font-family: Germanika Personal Use;
-}
-.box4{
-  margin:50px 20px 20px 40px;
-  border-style:hidden;
-  background:url(../images/photo.jpg);
-  background-position:center;
-  border-radius:5%;
-  font-size:60px;
-  color:rgb(248,248,255);
-  font-family: Germanika Personal Use;
-}
-.box5{
-  margin:50px 40px 20px 250px;
-  background:url(../images/Geometric.jpg);
-  background-position:center;
-  border-style:hidden;
-  border-radius:5%;
-  font-size:60px;
-  color:rgb(248,248,255);
-  font-family: Germanika Personal Use;
-}
-.box6{
-  margin:50px 20px 20px 40px;
-  border-style:hidden;
-  border-radius:5%;
-  background:url(../images/japanese.jpg);
-  background-position:center;
-  font-size:60px;
-  color:rgb(248,248,255);
-  font-family: Germanika Personal Use;
-}
-.parallax-separate{
-  border-style:hidden;
-  height:650px;
-  width:1345px;
-  margin-top:50px;
-  margin-bottom:100px;
-  background: url(../images/tattoo3.jpg) no-repeat center center fixed; 
-  display: table;
-  position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.storiestitle{
-  font-family: Germanika Personal Use;
-  font-size: 110px;
-  color:rgb(185,81,107);
-  text-align: center;
-  margin-top: 240px;
-}
-.like-box{
-  border:solid 2px;
-  border-left-style:hidden;
-  border-right-style:hidden;
-  border-color:	rgb(211,211,211);
-  height:50px;
-  width:1000px;
-  text-align: center;
-  margin-left:80px;
-  margin-bottom:50px;
-}
-.like{
-  color:	rgb(169,169,169);
-  font-size:15px;
-  text-align:left;
-  margin-top:12px;
-}
-.blood{
-  background:url(../images/blood.jpg)
-}
-.box-news{
-  border:solid;
-  height:300px;
-  width:400px;
-  margin-left:80px;
-  background: url(../images/cover1.jpg);
-  background-size:cover;
-   border-style:hidden;
-  border-radius:5%;
-}
-.lorem{
-  font-size:17px;
-  margin-top:20px;
-  color:	darkgrey;
-  font-family:Stardos Stencil;
-  margin-left:90px;
-  margin-right:70px;
-}
-.box-news2{
-  border:solid;
-  height:300px;
-  width:400px;
-  margin-left:70px;
-  background: url(../images/cover2.jpg);
-  background-size:cover;
-   border-style:hidden;
-  border-radius:5%;
-}
-  .box-news3{
-  border:solid;
-  height:300px;
-  width:400px;
-  margin-left:60px;
-  margin-bottom:100px;
-  background: url(../images/cover3.jpg);
-  background-size:cover;
-   border-style:hidden;
-  border-radius:5%;
-  }
-  .map{
-    width: 100%;
-        height: 400px;
-  }
-  .parallax-separate2{
-  border-style:hidden;
-  height:660px;
-  width:1345px;
-  margin-top:50px;
-  margin-bottom:100px;
-  margin-left:0px;
-  background: url(../images/tattooer2.jpg) no-repeat center center fixed; 
-  display: table;
-  position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.shopstitle{
-  font-family: Germanika Personal Use;
-  font-size: 110px;
-  color:rgb(185,81,107);
-  text-align: center;
-  margin-top: 240px;
 }
 
-#myInput {
-    border-box: box-sizing;
-    background-image: url('searchicon.png');
-    background-position: 14px 12px;
-    background-repeat: no-repeat;
-    font-size: 15px;
-    padding: 14px 20px 12px 45px;
-    border: none;
+.ham-menu {
+  border-style: hidden;
+  background-color: transparent;
+  font-family: Kanit;
+  font-size: 37px;
+  letter-spacing: 3px;
+  margin-top: 10px;
 }
 
 .dropdown {
-
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    min-width: 80px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  min-width: 80px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown-content a {
-    color: darkgrey;
-    padding: 12px 16px;
-    font-family: Teko;
-   display:block;
+  color: darkgrey;
+  padding: 12px 16px;
+  font-family: Teko;
+  display: block;
 }
 
-.show {display:block;}
+.gallery-title {
+  font-family: Teko;
+  font-size: 65px;
+  color: rgb(185,81,107);
+  text-align: center;
+}
+
+.gallery-box-text {
+  margin-top: 145px;
+  font-size: 60px;
+  font-family: Germanika Personal Use;
+  color: rgb(248, 248, 248);
+  text-align: center;
+}
+
+.gallery-box {
+  border-style: hidden;
+  height: 400px;
+  width: 300px;
+  border-radius: 5%;
+}
+
+.gallery-box-1 {
+  margin: 50px 40px 20px 245px;
+  background: url(../images/blackgrey.jpg);
+  background-position: center;
+}
+
+.gallery-box-2 {
+  margin: 50px 20px 20px 40px;
+  background: url(../images/nuskool.jpg);
+  background-position: center;
+}
+
+.gallery-box-3 {
+  margin:50px 40px 20px 250px;
+  background: url(../images/traditional.jpg);
+  background-position: center;
+}
+
+.gallery-box-4 {
+  margin:50px 20px 20px 40px;
+  background: url(../images/oldman.jpg);
+  background-position: center;
+}
+
+.gallery-box-5 {
+  margin:50px 40px 20px 250px;
+  background: url(../images/geometric.jpg);
+  background-position: center;
+}
+
+.gallery-box-6 {
+  margin: 50px 20px 20px 40px;
+  background: url(../images/japanese.jpg);
+  background-position: center;
+}
+
+.parallax-separate {
+  border-style: hidden;
+  height: 650px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: table;
+  position: relative;
+}
+
+.stories-intro {
+  background: url(../images/tattoo3.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.stories-title {
+  font-family: Germanika Personal Use;
+  font-size: 110px;
+  color: rgb(185,81,107);
+  text-align: center;
+  margin-top: 240px;
+}
+
+.like-box {
+  border: solid 2px;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-color:	rgb(211,211,211);
+  text-align: center;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+
+.like {
+  color: rgb(169,169,169);
+  font-size: 15px;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.lorem {
+  font-size: 17px;
+  margin-top: 20px;
+  color: rgb(100, 100, 100);
+  font-family: Stardos Stencil;
+}
+
+.news-box {
+  border: solid;
+  height: 300px;
+  background: url(../images/cover1.jpg);
+  background-size: cover;
+  border-style: hidden;
+  border-radius: 5%;
+}
+
+.news-box-1 {
+  background: url(../images/cover2.jpg);
+  background-size: cover;
+}
+
+.news-box-2 {
+  background: url(../images/cover3.jpg);
+  background-size: cover;
+}
+
+.news-box-3 {
+  background: url(../images/cover3.jpg);
+  background-size: cover;
+}
+
+.shops-intro {
+  background: url(../images/tattooer2.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.shopstitle {
+  font-family: Germanika Personal Use;
+  font-size: 110px;
+  color: rgb(185,81,107);
+  text-align: center;
+  margin-top: 240px;
+}
+
+#google-map {
+  height: 400px;
+  width: 100%;
+}
