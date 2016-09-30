@@ -25,7 +25,8 @@ body {
 }
 
 .double-arrow {
-  margin-top: 590px;
+  margin-top: 520px;
+  margin-left: 650px;
 }
 
 .ham-menu {
@@ -33,7 +34,7 @@ body {
   background-color: transparent;
   font-family: Kanit;
   font-size: 37px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   margin-top: 10px;
 }
 
@@ -44,15 +45,14 @@ body {
 
 .dropdown-content {
   display: none;
-  min-width: 80px;
+  min-width: 60px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown-content a {
   color: darkgrey;
   padding: 12px 16px;
-  font-family: Teko;
+  font-family: Germanika Personal Use;
   display: block;
 }
 
@@ -61,6 +61,7 @@ body {
   font-size: 65px;
   color: rgb(185,81,107);
   text-align: center;
+  margin-top:30px;
 }
 
 .gallery-box-text {
@@ -142,7 +143,6 @@ body {
   border-left-style: hidden;
   border-right-style: hidden;
   border-color:	rgb(211,211,211);
-  text-align: center;
   margin-left: 80px;
   margin-bottom: 50px;
 }
@@ -157,6 +157,9 @@ body {
 .lorem {
   font-size: 17px;
   margin-top: 20px;
+  margin-left:-40px;
+  margin-right:-20px;
+  margin-bottom:20px;
   color: rgb(100, 100, 100);
   font-family: Stardos Stencil;
 }
@@ -168,26 +171,37 @@ body {
   background-size: cover;
   border-style: hidden;
   border-radius: 5%;
+  width:400px;
+  margin-left:90px;
 }
 
 .news-box-1 {
   background: url(../images/cover2.jpg);
   background-size: cover;
+  margin-left:0px;
 }
 
 .news-box-2 {
   background: url(../images/cover3.jpg);
   background-size: cover;
-}
+  margin-left:90px;
+  height: 300px;
+  width:400px;
+  }
 
 .news-box-3 {
   background: url(../images/cover3.jpg);
   background-size: cover;
+
 }
 
 .shops-intro {
   background: url(../images/tattooer2.jpg) no-repeat center center fixed;
   background-size: cover;
+  display:table;
+  height:650px;
+  width:100%;
+  margin-bottom:50px;
 }
 
 .shopstitle {
@@ -198,7 +212,80 @@ body {
   margin-top: 240px;
 }
 
+.go-top-arrow{
+  margin-top: 20px;
+  margin-left: 650px;
+}
+.go-top-text{
+  margin-top:5px;
+  margin-left:635px;
+  color:ghostwhite;
+}
+
 #google-map {
   height: 400px;
   width: 100%;
+}
+
+.home-japan {
+  background: url(../images/yakuza2.jpg) no-repeat center center fixed;
+  display: table;
+  height: 650px;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  margin-bottom:300px;
+}
+.home-blackgrey {
+  background: url(../images/blackandgrey2.jpg) no-repeat center center fixed;
+  display: table;
+  height: 650px;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  margin-bottom:300px;
+}
+.home-newschool{
+  background: url(../images/newskull.jpg) no-repeat center center fixed;
+  display: table;
+  height: 650px;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  margin-bottom:300px;
+}
+.home-american {
+  background: url(../images/american2.jpg) no-repeat center center fixed;
+  display: table;
+  height: 650px;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  margin-bottom:300px;
+}
+.home-geometric {
+  background: url(../images/geometric2.jpg) no-repeat center center fixed;
+  display: table;
+  height: 650px;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  margin-bottom:200px;
+}
+.home-black {
+  background: url(../images/black.jpg) no-repeat center center fixed;
+  display: table;
+  height: 650px;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+.home-realism {
+  background: url(../images/realism.jpg) no-repeat center center fixed;
+  display: table;
+  height: 650px;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  margin-bottom:200px;
 }
